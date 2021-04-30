@@ -39,7 +39,7 @@ We are going to recognize the gestures from a video sequence. To recognize these
 
 (iii)	Contour Extraction 
 
-##Background subtraction
+## Background subtraction
 
 To do this, we used the concept of running averages. We make our system to look over a particular scene for 30 frames. During this period, we compute the running average over the current frame and the previous frames. After figuring out the background, we bring in our hand and make the system understand that our hand is a new entry into the background, which means it becomes the foreground object.
  
@@ -48,7 +48,7 @@ After figuring out the background model using running averages, we use the curre
 ## Motion detection and thresholding
 To detect the hand region from this difference image, we need to threshold the difference image, so that only our hand region becomes visible and all the other unwanted regions are painted as black.
 
-##Contour Extraction
+## Contour Extraction
 After thresholding the difference image, we find contours in the resulting image. The contour with the largest area is assumed to be our hand.
 The results after applying the above steps - 
 <img src="images/preprocessed.png" width="720" >
