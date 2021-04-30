@@ -26,9 +26,13 @@ We used deep learning techniques for model building. For model training, we have
 <img src="images/explo_architecture.png" width="720" >
 
 ## Model performance analysis
-Model is well trained since we have a lot of training data and also have used data augmentation techniques to make our model robust. This trained model has achieved an accuracy of 98.89% on training data and 98.13% on testing data in only 10 epochs. This model can handle variations in the positions of hand as well. The model takes an image of preprocessed hand gesture of shape (32,32) as the input and predicts the corresponding label for the gesture. The labels for different gestures are as follows. For full code, please refer to the explo.ipynb file.
+Model is well trained since we have a lot of training data and also have used data augmentation techniques to make our model robust. This trained model has achieved an accuracy of 98.89% on training data and 98.13% on testing data in only 10 epochs. This model can handle variations in the positions of hand as well. The model takes an image of preprocessed hand gesture of shape (32,32) as the input and predicts the corresponding label for the gesture.For full code, please refer to the explo.ipynb file.
 
 <img src="images/acc_score.png" width="450" >       <img src="images/loss_score.png" width="450" >
+
+The labels for different gestures are as follows-
+
+<img src="images/labels.png" width="720" >
 
 ## Find and segment the hand from the video sequence
 We are going to recognize the gestures from a video sequence. To recognize these gestures from a live video sequence, we first need to take out the hand region alone removing the unwanted portions in the video sequence. Hence, for segmenting the hand region, there are three major steps-
