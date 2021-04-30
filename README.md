@@ -17,5 +17,20 @@ The scope of the project is to construct a synchronous gesture classifying syste
 
 # Creating custom gestures using OpenCV
 For model training, we need training set. Here, we are manually creating gestures for model training purposes. Explo_gestures.py is the python file which is being used to make gestures. Following are the samples of manually created gesture images.
-                                        
+
+<img src="images/preprocessed.png" width="720" >
+
+## Gesture recognition and model prediction
+Now, the image of the segmented hand is feeded to the model as the input. The output of the model will be a 18 dimensional vector which represents the probability for 18 classes i.e., whether the input image belongs to this class or that. Using np.argmax function, we get the index of highest probability score predicted by the model. Using the list label, we get the final results.Here are some examples - 
+
+<img src="images/1.png" width="300" >         <img src="images/2.png" width="300" >         <img src="images/3.png" width="300" >
+
+## Feeding set of gestures as numbers and operators for performing calculator operations
+Using gestures we first input First Number, Operator and the Second Number. For inputing the digits of the numbers and the operators, we kept a window of 2 secs for each.
+Once the numbers and operators are inputed, the result will be printed on the screen.
+
+
+
+After feeding the first number, operator and the second number. The result will be printed on the screen like – 
+<img src="images/4.png" width="720" >
 
