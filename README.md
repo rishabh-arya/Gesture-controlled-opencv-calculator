@@ -15,7 +15,7 @@ The scope of the project is to construct a synchronous gesture classifying syste
 
 5 – Feeding set of gestures as numbers and operators for performing calculator operations.
 
-# Creating custom gestures using OpenCV
+## Creating custom gestures using OpenCV
 For model training, we need training set. Here, we are manually creating gestures for model training purposes. Explo_gestures.py is the python file which is being used to make gestures. Following are the samples of manually created gesture images.
 
 <img src="images/5.png" width="100" >                  <img src="images/6.png" width="100" >                  <img src="images/7.png" width="100" >
