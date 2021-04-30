@@ -32,13 +32,19 @@ Model is well trained since we have a lot of training data and also have used da
 
 ## Find and segment the hand from the video sequence
 We are going to recognize the gestures from a video sequence. To recognize these gestures from a live video sequence, we first need to take out the hand region alone removing the unwanted portions in the video sequence. Hence, for segmenting the hand region, there are three major steps-
+
 (i)	Background Subtraction
+
 (ii)	Motion detection and thresholding 
+
 (iii)	Contour Extraction 
+
 ##Background subtraction
+
 To do this, we used the concept of running averages. We make our system to look over a particular scene for 30 frames. During this period, we compute the running average over the current frame and the previous frames. After figuring out the background, we bring in our hand and make the system understand that our hand is a new entry into the background, which means it becomes the foreground object.
  
 After figuring out the background model using running averages, we use the current frame which holds the foreground object (hand in our case) in addition to the background. We calculate the absolute difference between the background model (updated over time) and the current frame (which has our hand) to obtain a difference image that holds the newly added foreground object (which is our hand). 
+
 ## Motion detection and thresholding
 To detect the hand region from this difference image, we need to threshold the difference image, so that only our hand region becomes visible and all the other unwanted regions are painted as black.
 
