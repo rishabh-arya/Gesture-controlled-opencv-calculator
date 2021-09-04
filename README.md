@@ -20,6 +20,8 @@ For model training, we need training set. Here, we are manually creating gesture
 
 <img src="images/5.png" width="100" >                  <img src="images/6.png" width="100" >                  <img src="images/7.png" width="100" >
 
+Also, you can use my dataset of 20 different gestures from [here](https://www.kaggle.com/aryarishabh/hand-gesture-recognition-dataset)
+
 ## Model Making for gesture recognition
 We used deep learning techniques for model building. For model training, we have 18 different classes having 800+ images for each class and we have also used data augmentation for creating batches of images. The Sequential model architecture consists of 4 convolution layers with 32, 64, 64, 128 filters respectively. Two Maxpooling layers are used, each after two convolution layers for reducing the dimension of the images followed by dropout layers. Then, a flatten layer followed by 3 Dense layers of 64, 32 ,18 units respectively. The activation function used for the last dense layer having 18 units is softmax function, which gives us the probability of those 18 classes. 
 
